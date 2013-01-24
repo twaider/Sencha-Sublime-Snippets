@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.model.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.data.Model',
+    
+    fields: [
+        { name: 'id', type: 'int' },
+        { name: '${2:name}', type: '${3:auto}' }
+    ],
+    sorters: [{
+        property: '${4:id}',
+        direction: 'ASC'
+    }],
+    validations: [{
+        type: '${5:presence}',
+        field: '${6:name}',
+        message: '${7:Error Text}'
+    }],
+    proxy: {
+        type: '${8}',
+        id: '${9}'
+    }
+    
+    $10
+});
+]]></content>
+	<tabTrigger>extmodel</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.data.Model</description>
+</snippet>

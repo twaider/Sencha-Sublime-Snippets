@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+
+var tpl = new Ext.XTemplate(
+    '<tpl if="this.${1:fn}(${2:args})">',
+       '${3:<strong>html with placeholders \{objName\}</strong>}',
+    '<tpl else>',
+        '${4:<strong>html with js placeholders \{[values.{objName]\}</strong>}',
+    '</tpl>',
+    {
+        ${1:fn}: function(${2:args}){
+            $5
+        }
+    }
+);
+
+var html = tpl.apply(${6:obj});
+${7:component}.setHtml(html);
+
+]]></content>
+    <description>Ext.XTemplate</description>
+    <scope>source.js</scope>
+    <tabTrigger>xtemplate</tabTrigger>
+</snippet>

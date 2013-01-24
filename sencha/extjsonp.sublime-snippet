@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+Ext.data.JsonP.request({
+    url: '${0: url}',
+    callbackKey: '${1:callback}',
+    params: {
+        format: 'json',
+        $2
+    },
+    success: function(result, request) {
+        //requires: 'Ext.data.JsonP'
+        console.log(result);
+        $3
+    }
+});
+]]></content>
+    <tabTrigger>jsonp</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.data.JsonP.request</description>
+</snippet>

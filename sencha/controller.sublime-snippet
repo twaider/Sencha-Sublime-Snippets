@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.controller.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.app.Controller',
+
+    models: [
+    	'${2:model}'
+    ],
+    stores: [
+    	'${3:store}'
+    ],
+
+    init: function(application){
+    	this.control({
+    		'${4:name}' : {
+    			${5:eventname} : this.${6:fn}
+    		}
+    	})
+    },
+
+    //controller methods
+    ${6:fn}: function($7){
+    	$8
+    }
+
+    $9
+});
+]]></content>
+	<tabTrigger>controller</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.app.Controller</description>
+</snippet>

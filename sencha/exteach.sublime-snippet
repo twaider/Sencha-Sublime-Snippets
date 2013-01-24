@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[Ext.each(${1:Array}, function(${3}) {
+    ${4}
+});]]></content>
+    <description>Ext.each</description>
+    <scope>source.js</scope>
+    <tabTrigger>each</tabTrigger>
+</snippet>

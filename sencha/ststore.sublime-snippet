@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.store.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.data.Store',
+    config: {
+    	model: '$1.model.$2',
+        //autoLoad: true,
+        $3
+    }
+});
+]]></content>
+	<tabTrigger>ststore</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.data.Store</description>
+</snippet>

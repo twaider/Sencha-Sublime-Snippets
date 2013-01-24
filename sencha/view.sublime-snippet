@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.Component',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+
+    ],
+    html: '${2:${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}}'
+    $3
+});
+]]></content>
+    <tabTrigger>view</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.Component</description>
+</snippet>

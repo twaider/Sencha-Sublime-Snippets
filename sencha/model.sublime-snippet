@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.model.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.data.Model',
+    
+    config: {
+        fields: [
+            { name: '$2', type: '$3' } 
+        ]
+
+        $4
+    }
+});
+]]></content>
+	<tabTrigger>model</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.data.Model</description>
+</snippet>
