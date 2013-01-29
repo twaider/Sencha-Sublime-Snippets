@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+Ext.Ajax.request({
+    url: '${0: url}',
+    callbackKey: '${1:callback}',
+    params: {
+        format: 'json',
+        $2
+    },
+    success: function(result) {
+        console.log(Ext.JSON.decode(result.responseText));
+        $3
+    }
+});
+]]></content>
+    <tabTrigger>ajax</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.Ajax.request</description>
+</snippet>

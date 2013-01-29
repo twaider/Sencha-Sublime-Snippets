@@ -1,6 +1,9 @@
 How to use
 ===========
 
+You can install packages with Sublime Package Control:
+http://wbond.net/sublime_packages/package_control
+
 Open in Sublime Text 2 and browse through packages:
 Sublime Text 2 > File > Preferences > Browse packages.
 Unzip the sencha folder in  Packages > User
