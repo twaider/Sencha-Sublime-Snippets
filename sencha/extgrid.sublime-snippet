@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.grid.Panel',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        //'Ext.grid.plugin.RowEditing',
+        //'Ext.grid.feature.Summary'
+    ],
+    selModel : {
+        selType : 'rowmodel'
+    },  
+    columns: [{
+        text: '${3}', 
+        dataIndex: '${4}',
+        //editor : {
+        //    xtype : 'textfield'
+        //}
+    },
+    ${5}
+    ],
+
+    //features: [{
+    //    ftype: 'summary'
+    //}],
+    //plugins : [ {
+    //    ptype : 'rowediting',
+    //    clicksToEdit : 2
+    //}]
+});
+]]></content>
+    <description>Ext.grid.Panel</description>
+    <scope>source.js</scope>
+    <tabTrigger>extgrid</tabTrigger>
+</snippet>
