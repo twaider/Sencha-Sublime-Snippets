@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.chart.Chart',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        'Ext.chart.series.${2:Pie}',
+        'Ext.chart.Legend'
+    ],
+    animate: true,
+    legend : {position : '${3:bottom}'},
+    theme: 'Base:gradients',
+    series: [{
+        type: '${2/(.)/\L\1\E/g}',
+
+        angleField: '${4}',
+        
+        highlight: {
+            segment: {
+                margin: 20
+            }
+        },
+        
+        //donut: ${5:20},
+        showInLegend: true,
+        label: {
+            field: '${6}',
+            display: 'rotate',
+            contrast: true,
+            font: '13px Arial'
+        }
+    }]
+});
+]]></content>
+    <tabTrigger>extchart</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.charts.Chart</description>
+</snippet>

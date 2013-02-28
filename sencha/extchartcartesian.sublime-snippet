@@ -1,0 +1,59 @@
+<snippet>
+    <content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.chart.Chart',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        'Ext.chart.series.${2:Line}',
+        'Ext.chart.axis.${3:Numeric}',
+        'Ext.chart.axis.${7:Category}',
+        'Ext.chart.Legend'
+    ],
+
+    animate: true,
+    shadow: true,
+    theme: 'Category1',
+    legend: {
+        position: 'top'
+    },
+    axes: [{
+            type: '${3:Numeric}',
+            position: '${4:left}',
+            title: '${5}',
+            fields: [ '${6}' ],
+            //minimum: 0,
+            //maximum: 25
+        }, {
+            type: '${7:Category}',
+            position: '${8:bottom}',
+            title: '${9}',
+            fields: [ '${10}' ]
+        } 
+    ],
+    series: [{
+        type: '${2/(.)/\L\1\E/g}',
+        title: '${9}',
+
+        axis: ['${4:left}'],
+        xField: '${10}',
+        yField: '${6}',
+
+        highlight: {
+            size: 7,
+            radius: 7
+        },
+        selectionTolerance: 40,
+        smooth: true,
+        //fill: true,
+        //markerConfig : {
+          //  radius: 6,
+          //  type: 'circle',
+          //  fill: '#770000'
+        //}
+    }]
+});
+]]></content>
+    <tabTrigger>extchart-cartesian</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.charts.Chart (Cartesian)</description>
+</snippet>

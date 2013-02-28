@@ -26,7 +26,7 @@ Ext.define('${1:MyNamespace}.controller.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
     $9
 });
 ]]></content>
-	<tabTrigger>controller</tabTrigger> -->
+	<tabTrigger>extcontroller</tabTrigger> -->
 	<scope>source.js</scope> 
 	<description>Ext.app.Controller</description>
 </snippet>

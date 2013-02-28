@@ -7,7 +7,7 @@ Ext.define('${1:MyNamespace}.store.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
     $3
 });
 ]]></content>
-	<tabTrigger>store</tabTrigger> -->
+	<tabTrigger>extstore</tabTrigger> -->
 	<scope>source.js</scope> 
 	<description>Ext.data.Store</description>
 </snippet>
