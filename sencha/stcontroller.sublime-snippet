@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.controller.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.app.Controller',
+    config: {
+        models: [
+        	'${2:model}'
+        ],
+        stores: [
+        	'${3:store}'
+        ],
+
+        refs: {
+            '${4:refname}' : '${5:selector}'
+        }, 
+        control: {
+            ${4:refname} : {
+        			${6:eventname} : '${7:fn}'
+            }
+        }
+    },
+
+    //controller methods
+    ${7:fn}: function($8){
+    	${9:console.log('$7', arguments)}
+    }
+
+    $10
+});
+]]></content>
+	<tabTrigger>stcontroller</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.app.Controller</description>
+</snippet>
