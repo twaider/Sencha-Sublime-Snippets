@@ -32,6 +32,7 @@ The following commands are available when opening a JavaScript file.
 - ststore <tab> (touch store)
 - stview <tab> (touch simple container)
 - stcontroller <tab> (touch controller)
+- stclass <tab> (define custom class)
 
 - log <tab> (console.log)
 
