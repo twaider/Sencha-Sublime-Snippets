@@ -30,6 +30,7 @@ The following commands are available when opening a JavaScript file.
 
 - stmodel <tab> (touch model)
 - ststore <tab> (touch store)
+- stview <tab> (touch simple container)
 
-]- log <tab> (console.log)
+- log <tab> (console.log)
 

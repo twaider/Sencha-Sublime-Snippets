@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.Container',
+    xtype: '${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        '${3}',
+    ],
+    config: {
+    	layout: {
+            type: '${4:default}'
+        },
+        //items: [
+        //    xtype: ''
+        //],
+        html: '${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name} view'
+    }
+});
+]]></content>
+	<tabTrigger>stview</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.Container</description>
+</snippet>
