@@ -20,5 +20,5 @@ ${7:component}.setHtml(html);
 ]]></content>
     <description>Ext.XTemplate</description>
     <scope>source.js</scope>
-    <tabTrigger>xtemplate</tabTrigger>
+    <tabTrigger>exttpl</tabTrigger>
 </snippet>
