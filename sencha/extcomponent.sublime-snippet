@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:MyNamespace}.${2}.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.${3:Component}',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        '${4}',
+    ],
+    initComponent: function(){
+        var me = this;
+        Ext.apply(me, {
+            html: '${5:${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}}'
+            ${6}
+        });
+        me.callParent(arguments);
+    }
+});
+]]></content>
+	<tabTrigger>extcomponent</tabTrigger> -->
+	<scope>source.js</scope> 
+	<description>Ext.define()</description>
+</snippet>

@@ -2,9 +2,8 @@
 	<content><![CDATA[
 Ext.define('${1:MyNamespace}.controller.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
     extend: 'Ext.app.Controller',
-
-    models: [
-    	'${2:model}'
+    requires: [
+        //'$2'
     ],
     stores: [
     	'${3:store}'

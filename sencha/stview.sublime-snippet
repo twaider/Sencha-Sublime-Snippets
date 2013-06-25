@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
-    extend: '$(2:Ext.Container}',
+    extend: '${2:Ext.Container}',
     xtype: '${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
     requires: [
         '${3}',

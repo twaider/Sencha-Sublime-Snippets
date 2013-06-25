@@ -1,0 +1,43 @@
+<snippet>
+    <content><![CDATA[
+Ext.define('${1:MyNamespace}.view.${TM_FILENAME/(.+)\..+|.*/$1/:name}', {
+    extend: 'Ext.form.Panel',
+    alias: 'widget.${TM_FILENAME/(.+)\..+|.*/\L$1\E/:name}',
+    requires: [
+        'Ext.form.FieldSet',
+        'Ext.form.Label',
+        'Ext.button.Button'
+    ],
+    title: '${2:form title}',
+    items: [{
+        xtype: 'fieldset',
+        title: '${3:fieldset title}',
+        instructions: ${4:instructions},
+        defaults: {
+            xtype: 'textfield'
+        },
+        items: [
+        	{
+        		name: '${5:name}',
+        		label: '${6:label}',
+        		placeHolder: '${6:placeholder}'
+        	},
+
+        	$7
+
+            {
+                xtype: 'button',
+                text: '${8:Submit}'
+                action: 'submit',
+                margin: 10,
+                ui: 'confirm'
+            }
+        ]
+    ]
+    }]
+});
+]]></content>
+    <tabTrigger>stform</tabTrigger> -->
+    <scope>source.js</scope> 
+    <description>Ext.form.Panel</description>
+</snippet>
