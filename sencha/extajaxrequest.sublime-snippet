@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+var sendData = {
+  api_service: '${0: api service}',
+  api_method: '${1: api method}'
+};
+
+Ext.Ajax.request({
+   jsonData: sendData,
+   success: function( result ) {
+      var data = Ext.decode(result.responseText);
+      if ( !data.d.BRSuccess ) {
+            console.log(data);
+         } else {
+            console.log('ok');
+         }
+      },
+   failure: function( result ) {
+      var data = Ext.decode(result.responseText);
+      console.log(data);
+   },
+   callback: function( ) {
+      Ext.Viewport.setMasked(false);
+   }
+});
+]]></content>
+<tabTrigger>ajaxGM</tabTrigger> -->
+<scope>source.js</scope> 
+<description>Ext.Ajax.request Globalmouth</description>
+</snippet>

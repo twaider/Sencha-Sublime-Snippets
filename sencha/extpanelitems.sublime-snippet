@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+items: [
+   {
+      xtype: '${1:button}',
+      cls:   '${2:Class}',
+      text:  '${3:Text}',
+   }${4:,}
+]
+]]></content>
+<tabTrigger>additems</tabTrigger> -->
+<scope>source.js</scope> 
+<description>Add items array</description>
+</snippet>

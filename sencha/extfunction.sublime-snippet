@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+${1:initialize:} function(${2: arguments }) {
+   ${3:do something..}
+}
+]]></content>
+<tabTrigger>extfunction</tabTrigger> -->
+<scope>source.js</scope> 
+<description>Add function</description>
+</snippet>

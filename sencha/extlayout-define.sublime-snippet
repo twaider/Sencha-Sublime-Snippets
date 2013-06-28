@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+layout: {
+   type:  '${1:vbox}',
+   align: '${2:stretch}',
+   ${3:pack: '${4:center}'
+}}${4:,}
+]]></content>
+<tabTrigger>extlayout-define</tabTrigger> -->
+<scope>source.js</scope> 
+<description>Add layout define</description>
+</snippet>
